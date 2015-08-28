@@ -1,0 +1,173 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Global
+// Variables
+$break-large: 900px;
+
+$font-family: Roboto;
+$font-size: 18px;
+$font-weight: 500;
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: $font-family;
+    font-weight: 300;
+}
+
+
+.container {
+    width: 100%;
+    margin: 0;
+    
+    padding: 0 200px 0 280px;
+
+    @media screen and (max-width: $break-large) {
+      padding: 0 20px 0 100px;
+    }
+}
+
+
+ul {
+  li {
+    display: inline;
+  }
+}
+
+a {
+   color:black
+}
+
+// Header
+
+.menu {
+  li {
+    display: inline;
+    margin-right: 10px;
+    line-height: 100px;
+  }
+  
+  a {
+    color: black;
+		font-size: $font-size;
+    font-weight: $font-weight;
+  }
+}
+
+.name {
+  h1 {
+    line-height: 100px;
+    margin: 0;
+    text-align: right;
+    color: black;
+		font-size: $font-size;
+    font-weight: $font-weight;
+  }
+}
+
+// Main
+.home {
+  .jumbotron {
+    background-image: url("http://www.wallackmanagement.com/SlideImg/show6.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+    
+	.container {
+    text-align: right;
+ 	  margin: 80px 0;
+  }
+  
+  h2 {
+    color: white;
+    font-size: 48px;
+    text-align: right;
+    line-height: 56px;
+  }
+  
+  .highlight {
+    color: black;
+    background-color: #eaeff4;
+    padding: 0 10px 0;
+  }
+  
+  .btn {
+    margin: 40px 0;
+    padding: 0;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgba(0,0,0,0.9);
+    border-radius: 0;
+    transition: background-color .5s;
+    
+    color: white;
+    font-size: $font-size;
+    font-weight: 100;
+  }
+  .btn:hover {
+    background-color: #cc6cff;
+  }
+}
+
+// Footer
+.footer {
+    text-align: right;
+    height: 200px;
+    
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: 300;
+    
+    p {
+      font-size: 14px;
+      font-weight: 300;
+    }
+}
+.social-media {
+  line-height: 30px;
+  margin: 65 0 20;
+  
+  li {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 0 0 0 10px;
+    text-indent: -9999px;
+    text-align: left;
+  }
+  
+  .github {
+    background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/github-edc899c60c7b3afd0c458e648197f578.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .linkedin {
+    background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/linkedin-be22eb82414f9f637debbe2d64c301cb.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .twitter {
+    background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/twitter-8c095eaee58362a46d56e3f07b50b23b.svg");
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+}
