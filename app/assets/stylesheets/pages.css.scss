@@ -41,7 +41,7 @@ ul {
 }
 
 a {
-   color:black
+  color:black;
 }
 
 // Header
@@ -72,6 +72,13 @@ a {
 }
 
 // Main
+.main {
+	.container {
+ 	  margin: 80px 0;
+  }
+}
+
+// Home
 .home {
   .jumbotron {
     background-image: url("http://www.wallackmanagement.com/SlideImg/show6.jpg");
@@ -81,7 +88,6 @@ a {
     
 	.container {
     text-align: right;
- 	  margin: 80px 0;
   }
   
   h2 {
@@ -116,6 +122,106 @@ a {
   }
 }
 
+.portfolio {
+  .jumbotron {
+    padding: 0;
+  }
+}
+
+// Unslide default CSS
+.banner { position: relative; overflow: auto; }
+    .banner { li { list-style: none; } }
+        .banner { ul { li { float: left; } } }
+        
+.banner {
+  ul {
+    padding: 0;
+    margin: 0;
+    
+    li {
+			height: 500px;
+      width: 100%;
+      
+      background-position: center;
+		  background-size: cover;
+    }
+  }
+}
+
+.first-slide {
+  background-image: url("http://www.wallackmanagement.com/SlideImg/show6.jpg");
+}
+
+.second-slide {
+  background-image: url("https://i.imgur.com/Wiy528i.jpg");
+}
+
+.third-slide {
+  background-image: url("https://i.imgur.com/4PC1oo9.jpg");
+}
+
+
+.project {
+  transition: color .3s;
+  padding: 0 20px;
+  text-decoration: none;
+}
+.project:hover {
+  color: #cc6cff;
+  text-decoration: none;
+}
+
+.thumbnail-header {
+  background-color: #eaeff4;
+  
+  height: 20px;
+  width: 100%;
+  
+  .thumbnail-header-btn {
+    float: left;
+    border-radius: 100%;
+    background: white;
+    height: 10px;
+    width: 10px;
+    margin: 5px 0 0 5px;
+  }
+}
+
+.thumbnail {
+  border: 0;
+}
+.thumbnail-image {
+  height: 200px;
+  
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.image-project-1 {
+	background-image: url("https://i.imgur.com/MBCZh43.jpg");
+}
+
+.image-project-2 {
+	background-image: url("https://i.imgur.com/lYnhkXk.jpg");
+}
+
+.image-project-3 {
+	background-image: url("https://i.imgur.com/h07kzKQ.jpg");
+}
+
+.image-project-4 {
+	background-image: url("https://i.imgur.com/dRg9CmC.jpg?1");
+}
+
+.image-project-5 {
+	background-image: url("https://drscdn.500px.org/photo/120406205/w%3D280_h%3D280/61811aab08ecd91a6416face03f23169?v=1");
+}
+
+.image-project-6 {
+	background-image: url("https://drscdn.500px.org/photo/63788569/h%3D300/b6c65fb53f02b263d14f6094680d4f61");
+}
+
 // Footer
 .footer {
     text-align: right;
@@ -130,6 +236,7 @@ a {
       font-weight: 300;
     }
 }
+
 .social-media {
   line-height: 30px;
   margin: 65 0 20;
@@ -143,17 +250,7 @@ a {
     text-align: left;
   }
   
-  .github {
-    background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/github-edc899c60c7b3afd0c458e648197f578.svg");
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-
-  .linkedin {
-    background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/linkedin-be22eb82414f9f637debbe2d64c301cb.svg");
+  a {
     display: block;
     width: 24px;
     height: 24px;
@@ -161,13 +258,16 @@ a {
     background-repeat: no-repeat;
   }
   
+  .github {
+    background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/github-edc899c60c7b3afd0c458e648197f578.svg");
+  }
+
+  .linkedin {
+    background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/linkedin-be22eb82414f9f637debbe2d64c301cb.svg");
+  }
+  
   .twitter {
     background-image: url("https://portfolio-rails-2633.herokuapp.com/assets/twitter-8c095eaee58362a46d56e3f07b50b23b.svg");
-    display: block;
-    width: 24px;
-    height: 24px;
-    background-position: center center;
-    background-repeat: no-repeat;
   }
   
 }
