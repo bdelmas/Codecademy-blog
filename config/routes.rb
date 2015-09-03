@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root "pages#welcome"
-  get "/portfolio" => "pages#portfolio"
+  get "/portfolio" => "pages#portfolio", as: :portfolio
   
   
   # The priority is based upon order of creation: first created -> highest priority.
